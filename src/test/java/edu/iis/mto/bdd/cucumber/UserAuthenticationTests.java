@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 
-@RunWith(Cucumber.class)
+@RunWith(CucumberWithSerenity.class)
 @CucumberOptions(plugin = { "pretty",
 		"html:target/cucumber" },  tags = {"@authentication"}, glue = "edu.iis.mto.bdd.cucumber.steps")
 public class UserAuthenticationTests {
